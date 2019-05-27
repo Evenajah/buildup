@@ -1,0 +1,764 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+//icon
+@import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+//Fadein page
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+    transform: translateY(-10px);
+}
+.fade-appear p,
+.fade-enter p {
+  transform: translateY(-5px);
+  opacity: 0;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms linear 150ms, transform 300ms ease-out 150ms;
+}
+.fade-appear-active p,
+.fade-enter.fade-enter-active p {
+  transform: translateY(0);
+  opacity: 1;
+}
+.fade-appear-active p:nth-child(2),
+.fade-enter.fade-enter-active p:nth-child(2) {
+  transition: opacity 300ms linear 300ms, transform 300ms ease-out 300ms;
+}
+.fade-appear-active p:nth-child(3),
+.fade-enter.fade-enter-active p:nth-child(3) {
+  transition: opacity 300ms linear 400ms, transform 300ms ease-out 400ms;
+}
+.fade-appear-active p:nth-child(4),
+.fade-enter.fade-enter-active p:nth-child(4) {
+  transition: opacity 300ms linear 500ms, transform 300ms ease-out 500ms;
+}
+.fade-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms linear, transform 150ms ease-in;
+}
+//End page in
+
+
+html,body{
+  height: 100vh;
+  width: 100vw;
+  background-image:url('http://www.printawallpaper.com/upload/designs/big_idea_detail.jpg');
+  background-position:0% 9%;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  
+}
+*{
+  //font-family: Berlin Sans FB;
+  margin:0;
+  padding:0;
+}
+
+.nav-link .navbar-brand{
+  color:WHITE !important;
+}
+
+#navbarNav{
+  font-size:2.5vw;
+}
+
+.navbar-brand{
+  font-size: 30px
+  !important;
+}
+
+.nav-link{
+  font-size: 20px
+  !important;
+ }
+
+
+.feature{
+  background-image:url('https://www.4wdtoursrus.com.au/wp-content/uploads/2015/11/home14-section3-bg.jpg');
+  background-size:cover;
+  color:white;
+  z-index: 110;
+  position: relative;
+  padding:100px;
+  background-attachment: fixed;
+}
+.content{
+  margin-top:17vw;
+  margin-bottom:35vw;
+}
+h1{
+  font-size:5vw
+  !important;
+}
+p{
+  font-size:22px;
+  text-align:center;
+}
+.parallax{
+  padding:200px;
+  
+  background-image:url('https://www.bbb.org/why/img/why/why_bg6.jpg');
+  z-index:100;
+  position:relative;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  color:Whitesmoke;
+  
+  align-items:center;
+}
+.createEnjoy{
+  text-align:center;
+  display:inline-block;
+  background-color:whitesmoke;
+  padding:20px;
+  border-radius:70px;
+  color:black;
+}
+.createEnjoy:hover{
+  transform: scale(1.09);
+  color:whitesmoke;
+  background-color:black;
+  transition:0.5s
+}
+.navbar{
+  width:100%;
+  position:fixed;
+  background-color:black;
+  z-index:9999;
+  opacity:0.8;
+}
+.footer-copyright {
+  background-color:#FFF0F5;
+}
+
+
+#FooterID{
+  border-bottom:1px solid #BEBEBE;
+}
+
+.Footer{
+  z-index:200;
+  position: relative;
+}
+#formSearch{
+  color:whitesmoke;
+  width:500px;
+ 
+}
+
+#LocationAndTelMe{
+  font-size:20px;
+  border-right:2px solid #BEBEBE;;
+  padding:10px;
+}
+
+#LocationAndTelMe:hover{
+  font-size:20px;
+  transform: scale(1.0);
+}
+
+
+#LocationAndTelMeLast{
+  font-size:20px;
+  padding:10px;
+}
+
+#LocationAndTelMeLast:hover{
+  font-size:20px;
+  transform: scale(1.0);
+}
+
+
+#SearchBtn{
+  font-size:15px;
+}
+
+
+.logo{
+  width: 50px;
+  height: 50px;
+}
+/*formlogin & regis*/
+
+
+
+.iconSize{
+  display:block;
+  font-size:35px;
+  color:#708090;
+}
+.iconSize:hover{
+  transform: scale(1.2);
+  transition:0.2s;
+
+}
+footer{
+  background-color:#D3D3D3;
+  color:black;
+}
+.powered{
+  font-size:18px;
+  color:#708090;
+}
+.Contact{
+  font-size:28px;
+  color:#708090;
+}
+.modal-content{
+  
+  text-align:center;
+}
+.iConLogin{
+  font-size: 9vw;
+  margin-left:30px
+}
+.close{
+  font-size:3vw;
+  margin-right:10px;
+}
+.inputLogin{
+  padding:5px;
+  border:none;
+  background-color:#D3D3D3;
+}
+.submitBtn{
+  border:none;
+  padding:7px;
+  width:68%;
+  font-size:1vw;
+  background-color:black;
+  color:whitesmoke;
+  opacity:0.8;
+}
+.submitBtn:hover{
+  color:black;
+  background-color:#D3D3D3;
+  cursor:pointer;
+  transition:0.2s;
+}
+.modal-footer{
+  background-color:LightGray;
+}
+#closeBtn{
+  background-color:#BEBEBE;
+}
+#closeBtn:hover{
+  background-color:black;
+  color:white;
+  opacity:0.5
+}
+.gotoRegis{
+  font-size: 1.2vw;
+  color:#778899;
+}
+.gotoRegis:hover{
+  color:black;
+  text-decoration:none;
+  transition:0.4s;
+}
+
+/*end form login*/
+
+//swal
+.swal-text {
+  background-color: #FAF0E6;
+  padding: 17px;
+  border: 1px solid lightgray;
+  display: block;
+  margin: 22px;
+  text-align: center;
+  color: #61534e;
+  font-size:18px;
+}
+
+//build
+.build{
+  text-align:center;
+  background-size: cover;
+  background-attachment: fixed;
+  width:100%;
+  margin:auto;
+ 
+}
+
+.formCreate{
+  display: inline-block;
+  background-color:#DCDCDC;
+  padding:5vw;
+  width:85%;
+}
+
+.formCreate .form-control{
+  border:none;
+  width:100%;
+  font-size:1.5vw;
+  
+}
+
+
+#textareaBuild{
+  height : 50vw;
+}
+
+.headerBuild{
+  margin:auto;
+  padding:1vw;
+  border:none;
+  color:#2F4F4F;
+  text-align:left;
+  border-bottom:0.3vw solid #BEBEBE;
+}
+
+.btnBuild{
+  width:55vw;
+  padding:0.3vw;
+  font-size:2.5vw;
+  background-image:url('https://hdqwalls.com/download/gradient-geometry-background-abstract-lu-2560x1440.jpg');
+  border:none;
+  color:whitesmoke;
+}
+
+.btnBuild:hover{
+  color:black;
+  background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSljeEOBOCCOM9Ii-rycde04XeaViZfEbx6GJ_YGGVU_5ze9X9M');
+  transition:0.3s;
+  cursor:pointer;
+}
+.fileInput{
+  background-color:#BEBEBE;
+  color:#696969;
+  border:none;
+  margin:auto;
+  font-size:20px;
+  border:none;
+  width:40vw;
+}
+
+.labelFile{
+  font-size:1.5vw;
+}
+//end  Build
+
+//Explore
+.WrapExplore{
+  color:black;
+}
+.col-md-4{
+  background-color:white;
+  padding:3vw;
+}
+.col-md-4:hover{
+  transition:0.3s;
+  transform: scale(1.05);
+  background-color:#DCDCDC;
+  cursor:pointer;
+  color:#2F4F4F;
+  z-index:9998;
+}
+#ContainerExplore{
+  background-color:white;
+}
+
+.TopicSegment{
+  border-bottom:0.3vw solid #BEBEBE;
+  font-size: 35px;
+  padding:1.5vw;
+}
+
+.imageItems{
+  margin:auto;
+  display: block;
+  width:100%;
+  
+
+  
+  
+  
+}
+.imageItems:hover{
+  opacity:0.7;
+  transition:0.5s
+ 
+}
+
+.componentItem{
+  font-size:15px;
+  border-bottom:1px solid #BEBEBE;
+  padding:10px;
+}
+.LinkWithId{
+  color:black;
+}
+.LinkWithId:hover{
+  text-decoration:none;
+  color:#2F4F4F;
+}
+
+//IndexItem
+.Index{
+
+  margin:auto;
+}
+.col-md-12{
+  opacity:0.9;
+  background-color:whitesmoke;
+  padding:8vw;
+}
+.detail{
+  width:100%;
+  font-size:18px;
+}
+.rowIndex{
+  
+  margin:auto;
+  width:100%;
+}
+.topicIndex{
+  font-weight: normal;
+  font-size:30px;
+}
+.imageIndex{
+  width:66.2%;
+  
+ 
+ }
+.imageIndex:hover{
+  transform: scale(1.05);
+  transition:0.3s;
+}
+.componentIndex{
+  display:block;
+  float:right;
+  background-color:#778899;
+  
+  width:33.8%;
+  height:100%;
+  padding:2.5vw;
+  font-size:1.5vw;
+}
+
+.componentIndex:hover{
+  transform: scale(1.05);
+  transition:0.3s;
+}
+hr{
+  background-color: #BEBEBE;
+}
+
+.btn{
+  font-size:1vw;
+}
+.WrapHeaderIndex{
+  
+  padding: 1vw;
+  background-color:#DCDCDC;
+  border:none;
+  padding-left:4vw;
+}
+
+
+//category
+.category{
+  display:inline-block;
+  padding:0.5vw;
+  font-size:2vw;
+}
+
+.category:hover{
+  transform: scale(1.05);
+  text-decoration: none;
+  transition:0.3s;
+}
+
+#columnCategory{
+  padding:1.5vw;
+  background-color:white;
+}
+
+
+//endcategory
+
+
+.view{
+  // background-color:whitesmoke;
+  border-bottom:1px solid #DCDCDC;
+  
+  margin:auto;
+  padding:10px;
+  color:#708090;
+ 
+}
+.view:hover{
+ 
+  text-decoration:none;
+  transform: scale(1.05);
+  transition:0.3s;
+}
+
+//pagination
+.pagiNation{
+  margin:auto;
+  display:inline-block;
+  border:none;
+}
+
+.page-link:hover{
+  background-color:#2F4F4F;
+  color:whitesmoke;
+  transition:0.3s;
+  transform:scale(1.3);
+ }
+
+
+.page-item.active .page-link {
+ 
+  z-index: 1;
+ 
+  color: #fff;
+ 
+  background-color: #BEBEBE;
+ 
+  border-color:#BEBEBE;
+ 
+}
+.page-item{
+  border:none;
+}
+ 
+
+//Account
+.formAccount{
+  display:block;
+  padding:10px;
+  background-color:black;
+  font-size:18px;
+  color:whitesmoke;
+  border:none;
+  border-radius:10px;
+}
+.formAccount:hover{
+  color:black;
+  background-color:#BEBEBE;
+  transform:scale(1.02);
+  transition:0.3s;
+  text-decoration:none;
+}
+
+
+//table
+.tableHead{
+  background-color:#2F4F4F;
+  color:whitesmoke;
+  padding:15px;
+  font-size:25px;
+  text-align:center;
+  border:none;
+  
+}
+table{
+  text-align: center;
+  opacity:0.95;
+  border:none;
+}
+.detailTable{
+  width:300px;
+  text-align: left;
+}
+
+
+tr:hover{
+  transform: scale(1.02);
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.ContainerExplore{
+  width:20px;
+}
+
+
+//file input
+input[type=file] {
+  color:black;
+  border:none;
+}
+
+//edit
+.imageEdit{
+  width:70%
+}
+
+//Noitem
+.headerNoitem{
+  color:#E9967A;
+  text-align: center;
+  background-color:white;
+  font-size:25px;
+  padding:15px;
+}
+.WrapNoitem{
+  margin:auto;
+  padding:3vw;
+}
+
+.iconNoitem{
+  font-size:100px;
+}
+
+
+//spinner
+.Loading{
+  margin:auto;
+  
+}
+.imgLoading{
+    margin: auto;
+}
+
+//validatesearch
+.WrapValidateSearch{
+  background-color:black;
+  color:whitesmoke;
+}
+
+//loginalert
+.LoginAlert{
+  background-color:white;
+  position:absolute;
+  transform:translate(-50%,-50%);
+  top:50%;
+  left:50%;
+  padding:30px;
+  text-align:center;
+}
+
+.iconLoginAlert{
+  font-size:75px;
+}
+
+#toggle{
+  color:whitesmoke;
+  padding:10px;
+  background-color:black;
+
+}
+
+#toggle:hover{
+  color:black;
+  background-color:#DCDCDC;
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+.WrapLoginAlert{
+  width:100vw;
+  height:100vh;
+}
+
+//paypal
+.imagepaypal{
+  width:150px;
+}
+
+.DonateInput{
+  width:400px;
+  padding:10px;
+  border:none;
+  background-color:#BEBEBE;
+  text-align:center;
+  color:#2F4F4F;
+}
+.DonateInput:focus{
+  transform: scale(1.07);
+  transition: 0.4s;
+  box-shadow: 5px 5px #888888;
+}
+.WrapDonate{
+  background-color:#DCDCDC;
+  margin:auto;
+  display:inline-block;
+  text-align:center;
+  padding:3vw;
+
+}
+.DonateIcon{
+  font-size:70px;
+}
+.donateTotal{
+  background-color:black;
+  color:white;
+  text-align:center;
+  padding:7px;
+}
+.usd{
+  background-color:#778899;
+  padding:10px;
+  color:whitesmoke;
+}
+
+
+
+.container-fluid{
+  width:80%;
+}
+
+//logout
+#logoutBtn{
+  background-color:#778899;
+}
+
+//search
+#searchBar{
+  position:absolute;
+  transform:translate(-50%,-50%);
+  top:50%;
+  left:50%;
+  position:fixed;
+}
+
+#AdminBtn{
+  background-color:#FF6666;
+}
+.AdminSec{
+  width:100vw;
+  height: 100vh;
+  background-image:url('https://www.4wdtoursrus.com.au/wp-content/uploads/2015/11/home14-section3-bg.jpg');
+}
+
+.WrapAdminSection{
+  position:absolute;
+  transform: translate(-50%,-50%);
+  top:50%;
+  left:50%;
+  background-color:whitesmoke;
+  padding:50px;
+  text-align: center;
+  border-radius: 10px;
+  opacity:0.8;
+}
